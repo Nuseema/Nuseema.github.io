@@ -1,9 +1,9 @@
 :root {
-  --bg: #fff7fa;        /* heel licht roze */
+  --bg: #fff7fa;        
   --white: #ffffff;
-  --pink: #f7cce3;      /* zacht pastel roze */
+  --pink: #f7cce3;      
   --text: #333;
-  --accent: #e89ac4;    /* iets donkerder roze voor hover */
+  --accent: #e89ac4;   
 }
 
 body {
@@ -12,8 +12,10 @@ body {
   background-color: var(--bg);
   color: var(--text);
   padding: 0 15px;
+  margin: 0;
 }
 
+/* HEADER */
 header {
   text-align: center;
   padding: 20px 0;
@@ -21,12 +23,14 @@ header {
   border-bottom: 2px solid var(--pink);
 }
 
+/* NAVIGATION */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 20px;
   padding: 15px 0;
+  margin: 0;
 }
 
 nav a {
@@ -42,6 +46,12 @@ nav a:hover {
   color: var(--white);
 }
 
+/* SECTIONS */
+section {
+  margin-bottom: 25px;
+}
+
+/* ARTICLES (blog + projects) */
 article {
   background: var(--white);
   padding: 20px;
@@ -57,10 +67,40 @@ article h3 {
   color: var(--accent);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 20px;
   font-size: 0.9rem;
   color: #555;
+  border-top: 2px solid var(--pink);
+}
+
+/* HOME PAGE EXTRA */
+.home-section {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--pink);
+  margin-bottom: 25px;
+}
+
+.home-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-section li {
+  background-color: var(--pink);
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* CONTACT SECTION */
+#contact a {
+  color: var(--accent);
+  font-weight: bold;
 }
